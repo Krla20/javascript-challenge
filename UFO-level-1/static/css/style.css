@@ -69,8 +69,8 @@ select {
   display: block;
   width: 100%;
   padding: 8px;
-  color: #8e979f;
-  outline: none;
+  color: #54607a;
+  outline: thick double #32a1ce;
 }
 
 #table-area th {
