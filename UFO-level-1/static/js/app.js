@@ -30,7 +30,7 @@ button.on('click', () => {
     // Prevent the page from refreshing on events
     d3.event.preventDefault();
     
-    let inputDate = inputFieldDate.property('value').trim(); // trim like excel emoves whitespace from both sides of a string
+    let inputDate = inputFieldDate.property('value').trim(); // trim like excel removes whitespace from both sides of a string
     // console.log(inputDate);
 
     let filterDate = tableData.filter(tableData => tableData.datetime == inputDate);

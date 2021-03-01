@@ -10,6 +10,8 @@ let button = d3.select('#filter-btn');
 let inputFieldDate = d3.select('#datetime');
 let inputFieldCity = d3.select('#city');
 let inputFieldState = d3.select('#state');
+let inputFieldCountry = d3.select('#country');
+let inputFieldShape = d3.select('#shape');
 let columns = ['datetime', 'city', 'state', 'country', 'shape', 'durationMinutes', 'comments']
 
 // Input data into html
@@ -40,6 +42,12 @@ button.on('click', () => {
     let inputState = inputFieldState.property('value').toLowerCase().trim();
     // console.log(inputState);
 
+    let inputCountry = inputFieldCountry.property('value').toLowerCase().trim();
+    // console.log(inputCountry);
+
+    let inputShape = inputFieldShape.property('value').toLowerCase().trim();
+    // console.log(inputState);
+
     let filterDate = tableData.filter(tableData => tableData.datetime == inputDate);
     // console.log(filterDate);
 
@@ -47,21 +55,27 @@ button.on('click', () => {
     // console.log(filterCity);
 
     let filterState = tableData.filter(tableData => tableData.state === inputState);
-    console.log(filterState);
+    // console.log(filterState);
 
-    let filterCombinedData = tableData.filter(tableData => tableData.datetime === inputDate && tableData.city === inputCity && tableData.state === inputState);
+    let filterCountry = tableData.filter(tableData => tableData.country === inputCountry);
+    // console.log(filterCountry);
+
+    let filterShape = tableData.filter(tableData => tableData.shape === inputShape);
+    // console.log(filterShape);
+
+    let filterCombinedData = tableData.filter(tableData => tableData.datetime === inputDate && tableData.city === inputCity && tableData.state === inputState && tableData.country === inputCountry && tableData.shape === inputShape);
     // console.log(filterCombinedData);
 
     tbody.html("");
 
     let response = {
-        filterDate, filterCity, filterState, filterCombinedData
+        filterDate, filterCity, filterState, filterCountry, filterShape, filterCombinedData
     }
     if(response.filterCombinedData.length !== 0) {
     addData(filterCombinedData);
     }
-    else if(response.filterCombinedData.length === 0 && ((response.filterDate.length !== 0 || response.filterCity.length !== 0 || response.filterState.length !== 0))) {
-    addData(filterDate) || addData(filterCity) || addData(filterState);
+    else if(response.filterCombinedData.length === 0 && ((response.filterDate.length !== 0 || response.filterCity.length !== 0 || response.filterState.length !== 0 || response.filterCountry.length !== 0 || response.filterShape.length !== 0))) {
+    addData(filterDate) || addData(filterCity) || addData(filterState) || addData(filterCountry) || addData(filterShape);
     }
     // If no sightings add comment
     else {

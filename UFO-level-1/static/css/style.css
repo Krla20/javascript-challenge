@@ -117,6 +117,13 @@ select {
   animation-delay: 1.2s;
 }
 
+p {
+  font-size: 1rem;
+  opacity: 0;
+  animation: subtitle 1.0s forwards linear;
+  animation-delay: 0.8s;
+}
+
 /* input placeholder color changes */
 .form-control::-webkit-input-placeholder {
   /* Chrome/Opera/Safari */
