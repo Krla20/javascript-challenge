@@ -1,10 +1,10 @@
-# javascript-challenge
+# JavaScript-Challenge
 **********************************
 ### By Karla M. Murphy
 *********************************
 
 * Deploy github page: [UFO Sightings](https://krla20.github.io/javascript-challenge/)
-
+<hr>
 <p align="center"><img width="800" height= "300" src="UFO-level-2/static/images/changeimage.jpg"></p>
 
 * The extra-terrestrial menace has come to Earth and we here at `ALIENS-R-REAL` have collected all of the eye-witness reports we could to prove it! All we need to do now is put this information online for the world to see and then the matter will finally be put to rest.
