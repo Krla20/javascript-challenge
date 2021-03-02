@@ -21,7 +21,7 @@
 
 * Use a date form in your HTML document and write JavaScript code that will listen for events and search through the `date/time` column to find rows that match user input.
 
-<p align="center"><img width="400" height= "350" src="Images/datafound1.PNG"></p>
+<p align="center"><img width="450" height= "400" src="Images/datafound1.PNG"></p>
         - If it's not a lucky day => No sightings on this date, try a new one...
 <p align="center"><img width="400" height= "400" src="Images/datanotfound.PNG"></p>
 
