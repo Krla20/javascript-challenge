@@ -35,5 +35,7 @@
   4. `country`
   5. `shape`
 
+        - You can run all values: 
 <p align="center"><img width="600" height= "350" src="Images/data2handleall.PNG"></p>
+        - You can run only 1 value:
 <p align="center"><img width="700" height= "400" src="Images/datafound2.PNG"></p>
