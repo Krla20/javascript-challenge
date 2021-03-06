@@ -40,5 +40,5 @@
 * You can filter all values at once: 
 <p align="center"><img width="800" height= "400" src="Images/data2handleall.PNG"></p>
         
-* You can file only by 1 value:
+* You can filter only by 1 value:
 <p align="center"><img width="700" height= "400" src="Images/datafound2.PNG"></p>
