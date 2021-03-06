@@ -37,7 +37,7 @@
   4. `country`
   5. `shape`
 
-* You can filter all values at onces: 
+* You can filter all values at once: 
 <p align="center"><img width="800" height= "400" src="Images/data2handleall.PNG"></p>
         
 * You can file only by 1 value:
